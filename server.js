@@ -12,7 +12,7 @@ app.engine("jsx", require("express-react-views").createEngine()); // sets view e
 
 // Routes
 app.get("/", (req, res) => {
-  res.send("testing connection");
+  res.render("index.jsx", { hello: "Hello World" });
 });
 
 // Server listener
